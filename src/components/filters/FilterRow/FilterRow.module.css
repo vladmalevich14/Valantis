@@ -1,0 +1,63 @@
+.filterRow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #7f7f7f;
+    -webkit-text-fill-color: #7f7f7f;
+    -webkit-text-stroke-color: #7f7f7f;
+    cursor: pointer;
+
+    &:focus-within {
+        color: #efb735;
+        -webkit-text-fill-color: #efb735;
+        -webkit-text-stroke-color: #efb735;
+    }
+
+    &:hover {
+        color: #e1a81f;
+        -webkit-text-fill-color: #e1a81f;
+        -webkit-text-stroke-color: #e1a81f;
+    }
+
+    & svg {
+        min-width: 24px;
+        min-height: 24px;
+    }
+}
+
+.filterRowDisabled {
+    opacity: 0.8;
+
+    &:hover {
+        color: #7f7f7f;
+        -webkit-text-fill-color: #7f7f7f;
+        -webkit-text-stroke-color: #7f7f7f;
+        cursor: default;
+    }
+}
+
+.filterRowInput {
+    z-index: -1;
+    position: absolute;
+    left: -100px;
+    width: 0.1px;
+    height: 0.1px;
+}
+
+.filterRowCheckBox {
+    opacity: 0.8;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.filterRowTitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #7f7f7f;
+    margin: 0;
+}
+

@@ -1,0 +1,63 @@
+.filterHeader {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5em;
+    margin: 5px 0;
+}
+
+.filtersContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    padding-right: 1px;
+    max-height: 200px;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 100px;
+        background-color: #bdbdbd;
+    }
+}
+
+.filtersInput {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    gap: 8px;
+    min-height: 40px;
+    background: #fff;
+    border: 1px solid #e7e9ec;
+    border-radius: 10px;
+}
+
+.filtersButton {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 100vmax;
+    border: 1px solid #a52838;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lightgray;
+    }
+
+    &:active {
+        background-color: darkgray;
+    }
+
+    &:disabled {
+        background-color: white;
+        opacity: 0.5;
+        cursor: default;
+    }
+}
